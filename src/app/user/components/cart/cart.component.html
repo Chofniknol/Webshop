@@ -1,0 +1,33 @@
+<div style="background-color: #F8F8F8; min-height: 91vh;">
+
+  <div style="padding-top: 10px;"></div>
+
+  <div style="margin-top:10px;" class="child" *ngFor="let product of CartProducts">
+    <div nz-row>
+      <!-- <div nz-col nzSpan="8">
+          <img class="profile" style="height: 130px; width: 200px; border-radius: 10px;"
+              [src]="product.processedImg" alt="profile" />
+      </div> -->
+      <div nz-col nzSpan="16">
+        <h2 style="cursor: pointer; color: #108ee9;">
+          {{product.productName}}</h2>
+        <hr>
+        <h5>Price : <b>${{product.price}}</b> - Quantity : <b>{{product.quantity}}</b>
+        </h5>
+        <hr>
+        <div style="float: right;">
+          <button style="margin-left: 10px;" nzSize="small" nz-button nzType="primary"
+                  (click)="minusProduct(product.productId)" [disabled]="product.quantity == 1">Minus</button>
+
+          <button style="margin-left: 10px;" nzSize="small" nz-button nzType="primary"
+                  (click)="plusProduct(product.productId)">Plus</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div style="margin-left: 650px;" *ngIf="CartProducts">
+    <H1>Total Bill: {{this.totalAmount}}</H1>
+    <button nz-button nzType="primary" routerLink="/user/place-order">Place Order</button>
+  </div>
+</div>
