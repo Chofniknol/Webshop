@@ -14,7 +14,6 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { NavComponent } from './nav/nav.component';
 import { DemoNgZorroAntdModule } from './DemoNgZorroAntdModule';
-import { IconsProviderModule } from './icons-provider.module';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 
@@ -35,7 +34,6 @@ registerLocaleData(en);
     BrowserAnimationsModule,
     DemoNgZorroAntdModule,
     ReactiveFormsModule,
-    IconsProviderModule,
     NzLayoutModule,
     NzMenuModule
   ],
