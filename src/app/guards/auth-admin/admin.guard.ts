@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot, UrlTree } from '@angular/router';
 import { NzNotificationService } from 'ng-zorro-antd/notification';
 import { Observable } from 'rxjs';
-import {UserStorageService} from "../../services/user-storage.service";
+import {UserStorageService} from "../../services/storage/user-storage.service";
+
 
 
 @Injectable({

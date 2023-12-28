@@ -4,7 +4,8 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { NzNotificationService } from 'ng-zorro-antd/notification';
 import {AuthService} from "../../../services/auth/auth.service";
-import {UserStorageService} from "../../../services/user-storage.service";
+import {UserStorageService} from "../../../services/storage/user-storage.service";
+
 
 
 @Component({
