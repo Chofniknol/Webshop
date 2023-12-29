@@ -45,7 +45,9 @@ tr {
 }
 
 p {
-  margin-bottom: 0em;
+  background-color: rgba(116, 208, 109, 0.23);
+  font-family: Arial;
+  color: grey;
 }
 
 hr {
@@ -67,3 +69,13 @@ h2:hover {
   margin-top: 20px;
 
 }
+
+.product-title {
+  font-size: 28px;
+  color: #345;
+  text-align: left;
+  border-bottom: 2px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+

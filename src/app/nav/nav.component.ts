@@ -13,7 +13,10 @@ export class NavComponent implements OnInit {
   isUserLoggedIn : boolean = UserStorageService.isUserLoggedIn();
   isAdminLoggedIn : boolean = UserStorageService.isAdminLoggedIn();
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {
+    //prevent no components showing from router outlet on first load
+    this.router.navigateByUrl('login');
+  }
 
   ngOnInit(): void {
     this.router.events.subscribe(event => {

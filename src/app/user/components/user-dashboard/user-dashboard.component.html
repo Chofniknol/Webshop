@@ -12,14 +12,16 @@
     <div nz-row>
 
       <div nz-col nzSpan="16">
-        <h2 style="cursor: pointer; color: #108ee9;">
+
+        <h2 class="product-title" >
           {{category.name}}</h2>
         <p>{{category.description}}</p>
 
-        <hr>
+
+        <!--
         <h5>ID : <b>{{category.id}}</b>
         </h5>
-        <hr>
+        -->
         <div style="float: right;">
           <button style="margin-left: 10px;" nzSize="small" nz-button nzType="primary"
                   routerLink="/user/products/{{category.id}}" nzDanger>View Products</button>

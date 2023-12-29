@@ -67,3 +67,41 @@ h2:hover {
   margin-top: 20px;
 
 }
+
+.profile{
+  width: 100%;
+  height: auto;
+}
+.description-container{
+  padding-left: 5%;
+  border-left-width: 2px;
+  border-left-color: #34373c;
+}
+.button-container{
+  border-left-width: 2px;
+  border-left-color: #34373c;
+}
+
+button {
+  outline: 0;
+  border: 0;
+  background: none;
+  border: 1px solid #d9d9d9;
+  padding: 8px 0px;
+  margin-bottom: 30px;
+  color: #515151;
+  text-transform: uppercase;
+  width: 125px;
+  font-family: inherit;
+  margin-right: 5px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+  button:hover {
+
+  // background: darken(white, 2%);
+    border: 1px solid #aedaa6;
+    color: #aedaa6;
+    cursor: pointer;
+
+  }

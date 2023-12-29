@@ -5,22 +5,22 @@
   <div style="margin-top:10px;" class="child" *ngFor="let product of products">
     <div nz-row>
       <div nz-col nzSpan="8">
-        <img class="profile" style="height: 130px; width: 200px; border-radius: 10px;"
+        <img class="profile"
              [src]="product.processedImg" alt="profile" />
       </div>
-      <div nz-col nzSpan="16">
-        <h2 style="cursor: pointer; color: #108ee9;">
-          {{product.name}}</h2>
-        <p>{{product.description}}</p>
+      <div class="description-container" nz-col nzSpan="16">
 
-        <hr>
-        <h5>Price : <b>${{product.price}}</b> - Rating : <b>{{product.rating}}</b> - Quantity :
-          <b>{{product.availableQuantity}}</b> - Category : <b>{{product.categoryName}}</b>
-        </h5>
-        <hr>
-        <div style="float: right;">
-          <button style="margin-left: 10px;" nzSize="small" nz-button nzType="primary"
-                  (click)="addToCart(product.id)" nzDanger>Add to Cart</button>
+        <h2>{{product.name}}</h2>
+        <hr style="color: #515151"/>
+        <p>{{product.description}}</p>
+        <h5>price: $ {{product.price}},-</h5>
+        <h5>rating: ({{product.rating}}/5)</h5>
+        <h5>Products left: {{product.availableQuantity}}</h5>
+        <h5>From catagory: {{product.categoryName}} </h5>
+
+        <div class="button-container" style="float: right;">
+          <button
+                  (click)="addToCart(product.id)" >Add to Cart</button>
         </div>
       </div>
 
